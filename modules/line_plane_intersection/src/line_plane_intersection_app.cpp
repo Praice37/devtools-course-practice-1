@@ -38,8 +38,7 @@ bool LinePlaneIntersectionApp::ValidateNumberOfArguments
     if (argc == 1) {
         Help(argv[0]);
         return false;
-    }
-    else if (argc != 17) {
+    } else if (argc != 17) {
         Help(argv[0], "ERROR: Should be 16 arguments.\n\n");
         return false;
     }
@@ -63,11 +62,9 @@ std::string parseOperation(const char* arg) {
     std::string op;
     if (strcmp(arg, "Intersect") == 0) {
         op = "PlaneIntersectLine";
-    }
-    else if (strcmp(arg, "Isnt_it_intersected") == 0) {
+    } else if (strcmp(arg, "Isnt_it_intersected") == 0) {
         op = "GetNotIntersectPlaneLine";
-    }
-    else {
+    } else {
         throw std::string("Invalid operation");
     }
     return op;
@@ -112,8 +109,7 @@ std::string LinePlaneIntersectionApp::operator()(int argc, const char ** argv) {
 
     if (isnt_intersect == true) {
         stream << "The plane is not intersecting the line";
-    }
-    else {
+    } else {
         if (args.operation == "PlaneIntersectLine")
             stream << "dot of intersection is = " << dot_of_intesection.x
             << ", " << dot_of_intesection.y << ", " << dot_of_intesection.z;
