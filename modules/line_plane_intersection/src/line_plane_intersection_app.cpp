@@ -1,13 +1,13 @@
 // Copyright 2019 Aksenov Nikita
 
-#include "include/line_plane_intersection_app.h"
-#include "include/line_plane_intersection.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <cstring>
 #include <string>
 #include <sstream>
+
+#include "include/line_plane_intersection_app.h"
+#include "include/line_plane_intersection.h"
 
 void LinePlaneIntersectionApp::Help
 (const char * appname, const char * message) {

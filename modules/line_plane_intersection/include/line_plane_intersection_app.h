@@ -3,9 +3,9 @@
 #ifndef MODULES_LINE_PLANE_INTERSECTION_INCLUDE_LINE_PLANE_INTERSECTION_APP_H_
 #define MODULES_LINE_PLANE_INTERSECTION_INCLUDE_LINE_PLANE_INTERSECTION_APP_H_
 
-#include "include/line_plane_intersection.h"
-
 #include <string>
+
+#include "include/line_plane_intersection.h"
 
 class LinePlaneIntersectionApp {
  public:

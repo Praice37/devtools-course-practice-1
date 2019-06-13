@@ -2,13 +2,13 @@
 
 #include <gtest/gtest.h>
 
-#include "include/line_plane_intersection_app.h"
-
 #include <string>
 #include <vector>
 #include <algorithm>
 #include <functional>
 #include <iterator>
+
+#include "include/line_plane_intersection_app.h"
 
 using ::testing::internal::RE;
 using std::vector;
@@ -104,8 +104,8 @@ TEST_F(LinePlaneIntersectionAppTest, Can_To_Get_Not_Intersect_PlaneLine) {
 }
 
 TEST_F(LinePlaneIntersectionAppTest, Can_Not_To_Get_Not_Intersect_PlaneLine) {
-    vector<string> args = { "Isnt_it_intersected", "0",
-        "0", "3", "0", "1", "1", "-3", "0", "0", " 0", "9", "-11", "1", "12", "-14" };
+    vector<string> args = { "Isnt_it_intersected", "0", "0", "3", "0", "1",
+        "1", "-3", "0", "0", " 0", "9", "-11", "1", "12", "-14" };
 
     Act(args);
 
