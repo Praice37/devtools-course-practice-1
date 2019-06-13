@@ -22,7 +22,6 @@ class LinePlaneIntersectionApp {
         Dot* plane;
         Dot* line;
     } Arguments;
-
 };
 
 #endif  // MODULES_LINE_PLANE_INTERSECTION_INCLUDE_LINE_PLANE_INTERSECTION_APP_H_
